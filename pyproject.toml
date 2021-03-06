@@ -11,8 +11,11 @@ documentation = "https://github.com/mcgillij/py3status-cpu-governor"
 keywords = ["cpu", "governor", "schedutil", "performance", "monitor"]
 include = [ "LICENSE", ]
 
+[tool.poetry.scripts]
+py3status_cpu_governor = "py3status_cpu_governor:run"
+
 [tool.poetry.plugins."py3status"]
-module = "py3status-cpu-governor.cpu-governor:Py3status"
+module = "py3status_cpu_governor"
 
 [tool.poetry.dependencies]
 python = "^3.9"
