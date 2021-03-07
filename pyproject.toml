@@ -8,14 +8,14 @@ readme = "README.md"
 homepage = "https://github.com/mcgillij/py3status-cpu-governor"
 repository = "https://github.com/mcgillij/py3status-cpu-governor"
 documentation = "https://github.com/mcgillij/py3status-cpu-governor"
-keywords = ["cpu", "governor", "schedutil", "performance", "monitor"]
+keywords = ["cpu", "governor", "py3status", "i3", "monitor"]
 include = [ "LICENSE", ]
 
 [tool.poetry.scripts]
 py3status_cpu_governor = "py3status_cpu_governor:run"
 
 [tool.poetry.plugins."py3status"]
-module = "py3status_cpu_governor"
+module = "py3status_cpu_governor.cpu_governor"
 
 [tool.poetry.dependencies]
 python = "^3.9"

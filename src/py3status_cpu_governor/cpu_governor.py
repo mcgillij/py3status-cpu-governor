@@ -18,7 +18,7 @@ class Py3status:
         except self.py3.CommandError as ce:
             return len(ce.output.splitlines())
 
-    def cpu_governor_status(self):
+    def cpu_governor(self):
 
         status = self._get_cpu_status()
         full_text = self.py3.safe_format(self.format, status)
@@ -29,7 +29,7 @@ class Py3status:
         }
 
 def run():
-    print("You need to add this module to your i3status.conf")
+    print("You need to add this module to ~/.i3/py3status/")
 
 
 if __name__ == "__main__":
