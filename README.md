@@ -1,6 +1,15 @@
 # py3status-cpu-governor
 Python module for py3status to show the cpu_governor state in i3
 
+This is handy if you manage your governor manually with something like
+
+``` bash
+alias performance_mode='echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
+alias powersave_mode='echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
+alias schedutil_mode='echo schedutil | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
+alias cpu_frequency_watch='watch -n.5 "cat /proc/cpuinfo | grep \"^[c]pu MHz\""'
+```
+
 ## Screenshot
 ![py3status cpu_governor](https://raw.githubusercontent.com/mcgillij/py3status-cpu-governor/main/images/cpu_governor.png)
 
