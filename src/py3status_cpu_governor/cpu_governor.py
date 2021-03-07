@@ -28,9 +28,6 @@ class Py3status:
             "cached_until": self.py3.time_in(self.cache_timeout),
         }
 
-def run():
-    print("You need to add this module to ~/.i3/py3status/")
-
 
 if __name__ == "__main__":
     from py3status.module_test import module_test
