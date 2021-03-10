@@ -1,7 +1,7 @@
 # py3status-cpu-governor
 Python module for py3status to show the cpu_governor state in i3
 
-This is handy if you manage your governor manually with something like
+This is handy if you manage your governor manually with something like or use [gamemode](https://github.com/FeralInteractive/gamemode)
 
 ``` bash
 alias performance_mode='echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
