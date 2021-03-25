@@ -25,12 +25,14 @@ mkdir -p ~/.i3/py3status && cd ~/.i3/py3status
 ln -s <PATH_TO_CLONED_REPO>/src/py3status-cpu-governor/cpu_governor.py ./
 ```
 
-### With Pip
+### With pip, pipenv or poetry
 ``` bash
 pip install py3status-cpu-governor
+pipenv install py3status-cpu-governor
+poetry add py3status-cpu-governor && poetry install
 ```
 
-### Building From AUR (Arch)
+### Building Arch package w/PKGBUILD
 ``` bash
 git clone https://aur.archlinux.org/py3status-cpu-governor.git
 cd py3status-cpu-governor.git
