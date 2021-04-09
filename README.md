@@ -1,6 +1,8 @@
 # py3status-cpu-governor
 Python module for py3status to show the cpu_governor state in i3
 
+[![Downloads](https://static.pepy.tech/personalized-badge/py3status-cpu-governor?period=total&units=international_system&left_color=blue&right_color=green&left_text=Downloads)](https://pepy.tech/project/py3status-cpu-governor)
+
 This is handy if you manage your governor manually with something like or use [gamemode](https://github.com/FeralInteractive/gamemode)
 
 ``` bash
