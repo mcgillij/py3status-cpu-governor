@@ -34,6 +34,12 @@ pipenv install py3status-cpu-governor
 poetry add py3status-cpu-governor && poetry install
 ```
 
+### With `yay`
+
+``` bash
+yay -S py3status-cpu-governor
+```
+
 ### Building Arch package w/PKGBUILD
 ``` bash
 git clone https://aur.archlinux.org/py3status-cpu-governor.git
