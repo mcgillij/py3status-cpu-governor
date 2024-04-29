@@ -11,6 +11,7 @@ depends=('python' 'py3status')
 makedepends=('python-setuptools' 'python-poetry' 'python-build' 'python-installer')
 url="https://github.com/mcgillij/py3status-cpu-governor"
 source=("https://github.com/mcgillij/py3status-cpu-governor/releases/download/$pkgver/py3status_cpu_governor-$pkgver.tar.gz")
+#source=("py3status_cpu_governor-$pkgver.tar.gz")
 md5sums=('692328e5952dc92fe39db3a85d6388c1')
 
 build() {
