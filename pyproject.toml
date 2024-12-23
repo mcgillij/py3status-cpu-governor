@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py3status-cpu-governor"
-version = "0.1.5"
+version = "0.1.6"
 description = "py3status monitor to show the state of your cpu governor"
 authors = ["mcgillij <mcgillivray.jason@gmail.com>"]
 license = "MIT"
@@ -23,7 +23,7 @@ classifiers = [
 module = "py3status_cpu_governor.cpu_governor"
 
 [tool.poetry.dependencies]
-python = "^3.10 || ^3.11 || ^3.12"
+python = "^3.11 || ^3.12 || ^3.13"
 py3status = "^3.34"
 
 [tool.poetry.dev-dependencies]
