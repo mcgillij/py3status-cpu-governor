@@ -57,7 +57,7 @@ sudo pacman -U --asdeps py3status-cpu-governor-*-any.pkg.tar.zst
 add the following line to your *~/.config/i3/i3status.conf*
 
 ``` bash
-order += "cpu_governor"
+order += "module cpu_governor"
 ```
 
 And restart your i3 session.

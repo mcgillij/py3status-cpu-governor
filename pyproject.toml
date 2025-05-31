@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py3status-cpu-governor"
-version = "0.1.6"
+version = "0.1.7"
 description = "py3status monitor to show the state of your cpu governor"
 authors = ["mcgillij <mcgillivray.jason@gmail.com>"]
 license = "MIT"
@@ -19,14 +19,14 @@ classifiers = [
     "Topic :: System :: Monitoring",
 ]
 
-[tool.poetry.plugins."py3status"]
-module = "py3status_cpu_governor.cpu_governor"
+[tool.poetry.plugins."py3status.modules"]
+cpu_governor = "py3status_cpu_governor.cpu_governor"
 
 [tool.poetry.dependencies]
 python = "^3.11 || ^3.12 || ^3.13"
 py3status = "^3.34"
 
-[tool.poetry.dev-dependencies]
+[poetry.group.dev.dependencies]
 black = "^20.8b1"
 pylint = "^2.7.2"
 flake8 = "^3.8.4"
